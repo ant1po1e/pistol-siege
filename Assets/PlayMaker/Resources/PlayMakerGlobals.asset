@@ -34,3 +34,4 @@ MonoBehaviour:
   events:
   - Add Item
   - Item Slot / Populate
+  - Damage
