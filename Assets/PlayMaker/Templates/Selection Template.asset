@@ -425,8 +425,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 192
-        y: 208
+        x: 193
+        y: 205
         width: 100
         height: 16
       isBreakpoint: 0
@@ -435,6 +435,7 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.AnimatorCrossFade
         - HutongGames.PlayMaker.Actions.SetFsmGameObject
         - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -442,10 +443,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010000
-        actionStartIndex: 000000000500000009000000
-        actionHashCodes: 5b66cf005e69bb04b2cf1000
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 00000000
+        actionStartIndex: 00000000050000000a0000000e000000
+        actionHashCodes: 6d5284045b66cf005e69bb04b2cf1000
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -455,6 +457,14 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Player Object
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -515,6 +525,12 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: Pickup
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: Inventory
         - useVariable: 0
           name: 
@@ -532,8 +548,26 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: 0.25
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 0
-        fsmIntParams: []
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmBoolParams:
         - useVariable: 0
           name: 
@@ -559,8 +593,13 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001200000013000000010000001f000000170000000f000000010000001400000011000000110000000100000001000000
+        paramDataType: 14000000120000000f000000100000000f00000014000000120000001200000013000000010000001f000000170000000f000000010000001400000011000000110000000100000001000000
         paramName:
+        - gameObject
+        - stateName
+        - transitionDuration
+        - layer
+        - normalizedTime
         - gameObject
         - fsmName
         - variableName
@@ -575,8 +614,8 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000000000000000000000000000000000000010000000100000000000000010000000200000003000000
-        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000001000000
+        paramDataPos: 00000000000000000000000000000000010000000100000001000000020000000000000000000000000000000000000002000000010000000200000000000000010000000200000003000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000001000000
     - name: State 1
       description: 
       colorIndex: 0
