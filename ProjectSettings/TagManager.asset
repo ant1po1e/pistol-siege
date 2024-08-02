@@ -7,6 +7,7 @@ TagManager:
   - Selectable
   - Bullet
   - Enemy
+  - Item
   layers:
   - Default
   - TransparentFX
