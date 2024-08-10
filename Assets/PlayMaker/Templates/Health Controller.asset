@@ -309,7 +309,6 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.SetTag
-        - HutongGames.PlayMaker.Actions.DestroySelf
         - HutongGames.PlayMaker.Actions.GetAnimatorCurrentStateInfo
         - HutongGames.PlayMaker.Actions.Wait
         customNames:
@@ -320,11 +319,10 @@ MonoBehaviour:
         - 
         - 
         - 
-        - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0000000000000000
-        actionStartIndex: 0000000005000000070000000b0000000f000000110000001400000022000000
-        actionHashCodes: c34b410515264c0187aa970087aa97009bd6f801230cc800c6a3480248c01101
+        actionEnabled: 01010101010101
+        actionIsOpen: 00000000000000
+        actionStartIndex: 0000000005000000070000000b0000000f000000110000001f000000
+        actionHashCodes: c34b410515264c0187aa970087aa97009bd6f801c6a3480248c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -424,12 +422,6 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 30
         - useVariable: 1
           name: Anim Length
           tooltip: 
@@ -528,18 +520,6 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
         - useVariable: 1
           name: 
           tooltip: 
@@ -558,7 +538,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000100000000f000000010000001400000011000000140000001200000011000000110000001400000012000000110000001100000014000000120000000f000000110000001100000014000000100000001200000010000000100000001000000010000000110000000f0000000f000000100000000f00000001000000070000000f0000001700000001000000
+        paramDataType: 1400000012000000100000000f0000000100000014000000110000001400000012000000110000001100000014000000120000001100000011000000140000001200000014000000100000001200000010000000100000001000000010000000110000000f0000000f000000100000000f00000001000000070000000f0000001700000001000000
         paramName:
         - gameObject
         - stateName
@@ -577,9 +557,6 @@ MonoBehaviour:
         - resetOnExit
         - gameObject
         - tag
-        - delay
-        - realTime
-        - detachChildren
         - gameObject
         - layerIndex
         - name
@@ -597,8 +574,8 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000000000000000000000000000000000000100000000000000020000000100000001000000020000000300000002000000030000000400000004000000030000000100000005000000060000000500000001000000040000000200000003000000040000000500000007000000020000000300000006000000040000000100000002000000050000000000000006000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000001000000
+        paramDataPos: 00000000000000000000000000000000000000000100000000000000020000000100000001000000020000000300000002000000030000000400000004000000030000000500000001000000040000000200000003000000040000000500000005000000010000000200000006000000030000000100000002000000040000000000000006000000
+        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000001000000
     - name: Damaged
       description: 
       colorIndex: 0
@@ -749,7 +726,7 @@ MonoBehaviour:
         - useVariable: 1
           name: Blood FX List
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           type: 3
           objectTypeName: UnityEngine.Object
@@ -982,13 +959,15 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.DestroySelf
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: b2cf1000
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0001
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 230cc800b2cf1000
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -1011,9 +990,27 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 3
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -1037,15 +1034,18 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000011000000110000000100000001000000
+        paramDataType: 0f00000011000000110000001400000011000000110000000100000001000000
         paramName:
+        - delay
+        - realTime
+        - detachChildren
         - gameObject
         - activate
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000001000000
-        paramByteDataSize: 0000000000000000000000000100000001000000
+        paramDataPos: 0000000000000000010000000000000002000000030000000000000001000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000100000001000000
     - name: Freeze
       description: 
       colorIndex: 0
