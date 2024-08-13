@@ -612,7 +612,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101010101010101
-        actionIsOpen: 0000000000000000
+        actionIsOpen: 0000000100000000
         actionStartIndex: 00000000050000000a0000000e0000001000000013000000180000001c000000
         actionHashCodes: 9c51240068fece05a4c8bf005ac852044d51cf04b2cf100009fbab04b2cf1000
         unityObjectParams: []

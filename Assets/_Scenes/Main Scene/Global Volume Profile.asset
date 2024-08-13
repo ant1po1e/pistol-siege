@@ -1,5 +1,39 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8114618585398897450
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
+  m_Name: ShadowsMidtonesHighlights
+  m_EditorClassIdentifier: 
+  active: 1
+  shadows:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.911496, z: 0.9665219, w: 0}
+  midtones:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.8752409, z: 0.8880706, w: 0}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.8248749, z: 0.84090537, w: 0}
+  shadowsStart:
+    m_OverrideState: 1
+    m_Value: 0
+  shadowsEnd:
+    m_OverrideState: 1
+    m_Value: 0.3
+  highlightsStart:
+    m_OverrideState: 1
+    m_Value: 0.55
+  highlightsEnd:
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &-3208600283233578877
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -15,7 +49,7 @@ MonoBehaviour:
   active: 1
   temperature:
     m_OverrideState: 1
-    m_Value: 29.1
+    m_Value: 30
   tint:
     m_OverrideState: 1
     m_Value: 6.6
@@ -92,6 +126,7 @@ MonoBehaviour:
   - {fileID: 761695763259175224}
   - {fileID: 8741889080563329047}
   - {fileID: -1627807270070303960}
+  - {fileID: -8114618585398897450}
 --- !u!114 &761695763259175224
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -110,7 +145,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.388
+    m_Value: 0.3
   response:
     m_OverrideState: 1
     m_Value: 1
@@ -200,13 +235,13 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.9873838, y: 1, z: 0.99704796, w: 0.000000105637184}
+    m_Value: {x: 0.94663155, y: 1, z: 0.99062216, w: 0.000000105637184}
   gamma:
     m_OverrideState: 1
     m_Value: {x: 0.949072, y: 1, z: 0.9722129, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9843971, z: 0.9873383, w: 0}
+    m_Value: {x: 1, y: 0.9068192, z: 0.94272, w: 0}
 --- !u!114 &5853951100300034591
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -294,7 +329,7 @@ MonoBehaviour:
   active: 1
   mode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   gaussianStart:
     m_OverrideState: 1
     m_Value: 10
@@ -303,7 +338,7 @@ MonoBehaviour:
     m_Value: 30
   gaussianMaxRadius:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 1.053
   highQualitySampling:
     m_OverrideState: 1
     m_Value: 0
