@@ -308,6 +308,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetAgentIsStopped
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.EnableFSM
+        - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.SetTag
         - HutongGames.PlayMaker.Actions.GetAnimatorCurrentStateInfo
         - HutongGames.PlayMaker.Actions.Wait
@@ -319,13 +320,22 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101
-        actionIsOpen: 00000000000001
-        actionStartIndex: 0000000005000000070000000b0000000f000000110000001f000000
-        actionHashCodes: c34b410515264c0187aa970087aa97009bd6f801c6a3480248c01101
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0000000001000001
+        actionStartIndex: 0000000005000000070000000b0000000f000000130000001500000023000000
+        actionHashCodes: c34b410515264c0187aa970087aa970087aa97009bd6f801c6a3480248c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -397,6 +407,12 @@ MonoBehaviour:
           name: Mouse Look FSM
           tooltip: 
           showInInspector: 1
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: Player Shoot FSM
+          tooltip: 
+          showInInspector: 0
           networkSync: 0
           value: 
         - useVariable: 0
@@ -520,6 +536,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 1
           name: 
           tooltip: 
@@ -538,7 +566,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000100000000f0000000100000014000000110000001400000012000000110000001100000014000000120000001100000011000000140000001200000014000000100000001200000010000000100000001000000010000000110000000f0000000f000000100000000f00000001000000070000000f0000001700000001000000
+        paramDataType: 1400000012000000100000000f000000010000001400000011000000140000001200000011000000110000001400000012000000110000001100000014000000120000001100000011000000140000001200000014000000100000001200000010000000100000001000000010000000110000000f0000000f000000100000000f00000001000000070000000f0000001700000001000000
         paramName:
         - gameObject
         - stateName
@@ -547,6 +575,10 @@ MonoBehaviour:
         - everyFrame
         - gameObject
         - isStopped
+        - gameObject
+        - fsmName
+        - enable
+        - resetOnExit
         - gameObject
         - fsmName
         - enable
@@ -574,8 +606,8 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000000000000000000000000000000000000100000000000000020000000100000001000000020000000300000002000000030000000400000004000000030000000500000001000000040000000200000003000000040000000500000005000000010000000200000006000000030000000100000002000000040000000000000006000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000000000000000000010000000000000002000000010000000100000002000000030000000200000003000000040000000400000003000000050000000600000005000000040000000600000001000000050000000200000003000000040000000500000007000000010000000200000006000000030000000100000002000000040000000000000006000000
+        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000001000000
     - name: Damaged
       description: 
       colorIndex: 0
@@ -1492,6 +1524,12 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 
+      - useVariable: 1
+        name: Player Shoot FSM
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -1552,7 +1590,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0

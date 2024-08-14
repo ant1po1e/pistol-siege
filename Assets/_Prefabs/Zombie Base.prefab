@@ -1636,7 +1636,13 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 0
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Is Player
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
       stringVariables:
       - useVariable: 1
         name: Mouse Look FSM
@@ -1646,6 +1652,12 @@ MonoBehaviour:
         value: Zombie Controller
       - useVariable: 1
         name: Movement FSM
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: Zombie Controller
+      - useVariable: 1
+        name: Player Shoot FSM
         tooltip: 
         showInInspector: 1
         networkSync: 0
@@ -1706,7 +1718,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
