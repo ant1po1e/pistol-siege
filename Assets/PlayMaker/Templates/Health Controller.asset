@@ -320,7 +320,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101010101
-        actionIsOpen: 00000000000000
+        actionIsOpen: 00000000000001
         actionStartIndex: 0000000005000000070000000b0000000f000000110000001f000000
         actionHashCodes: c34b410515264c0187aa970087aa97009bd6f801c6a3480248c01101
         unityObjectParams: []
@@ -949,8 +949,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 336
-        y: 208
+        x: 304
+        y: 304
         width: 189
         height: 16
       isBreakpoint: 0
@@ -959,18 +959,28 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.DestroySelf
+        - HutongGames.PlayMaker.Actions.SetMouseCursor
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.SetAnimatorTrigger
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0001
-        actionStartIndex: 0000000003000000
-        actionHashCodes: 230cc800b2cf1000
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 000000
+        actionStartIndex: 000000000400000009000000
+        actionHashCodes: 074b1504b2cf10009bd6f801
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Dead Panel
+            tooltip: 
+            showInInspector: 1
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -985,18 +995,25 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams:
+        fsmStringParams:
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 3
+          value: Dead
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: 
+          value: {fileID: 0}
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -1029,23 +1046,26 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f00000011000000110000001400000011000000110000000100000001000000
+        paramDataType: 2100000011000000110000000100000014000000110000001100000001000000010000001400000012000000
         paramName:
-        - delay
-        - realTime
-        - detachChildren
+        - cursorTexture
+        - hideCursor
+        - lockCursor
+        - everyFrame
         - gameObject
         - activate
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000002000000030000000000000001000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000100000001000000
+        - gameObject
+        - trigger
+        paramDataPos: 0000000000000000010000000000000000000000020000000300000001000000020000000100000000000000
+        paramByteDataSize: 0000000000000000000000000100000000000000000000000000000001000000010000000000000000000000
     - name: Freeze
       description: 
       colorIndex: 0
@@ -1250,6 +1270,95 @@ MonoBehaviour:
         - realTime
         paramDataPos: 0000000000000000000000000100000001000000020000000200000000000000010000000100000002000000030000000400000003000000000000000100000005000000020000000000000001000000030000000000000005000000
         paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000001000000
+    - name: Check
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 336
+        y: 208
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        - HutongGames.PlayMaker.Actions.DestroySelf
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0001
+        actionStartIndex: 0000000004000000
+        actionHashCodes: a4c8bf00230cc800
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 3
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Is Player
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - Activate Panel
+        - 
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 110000001700000017000000010000000f0000001100000011000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        - delay
+        - realTime
+        - detachChildren
+        paramDataPos: 00000000000000000100000000000000000000000100000002000000
+        paramByteDataSize: 00000000000000000000000001000000000000000000000000000000
     events:
     - name: Alive
       isSystemEvent: 0
@@ -1264,6 +1373,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 0
     - name: Freeze
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Check
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions:
@@ -1312,6 +1424,15 @@ MonoBehaviour:
       linkConstraint: 0
       linkTarget: 0
       colorIndex: 0
+    - fsmEvent:
+        name: Check
+        isSystemEvent: 0
+        isGlobal: 0
+      toState: Check
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
     variables:
       floatVariables:
       - useVariable: 1
@@ -1345,7 +1466,13 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 0
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Is Player
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
       stringVariables:
       - useVariable: 1
         name: Movement FSM
@@ -1425,7 +1552,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0

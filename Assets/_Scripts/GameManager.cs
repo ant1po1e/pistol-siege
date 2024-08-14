@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject settingPanel;
+    public GameObject mainPanel;
     public GameObject buttonsParent;
     private bool settingPanelActive;
+
+    public Animator transitionAnim;
     
     void Start()
     {
@@ -39,6 +42,16 @@ public class GameManager : MonoBehaviour
 
     public void LaodScene(string sceneName)
     {
+        StartCoroutine(TransitionLoadScene(sceneName));
+    }
+
+    IEnumerator TransitionLoadScene(string sceneName)
+    {
+        transitionAnim.SetTrigger("Transition");
+
+        yield return new WaitForSeconds(1f);
+
         SceneManager.LoadScene(sceneName);
+        mainPanel.SetActive(false);
     }
 }

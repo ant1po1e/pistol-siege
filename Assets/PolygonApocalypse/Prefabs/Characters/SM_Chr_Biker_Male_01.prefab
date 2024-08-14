@@ -1790,7 +1790,13 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 1
-      boolVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: Is Player
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 1
       stringVariables:
       - useVariable: 1
         name: Movement FSM
@@ -1860,7 +1866,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -9013,7 +9019,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101
-        actionIsOpen: 000000000101
+        actionIsOpen: 000000000000
         actionStartIndex: 00000000080000000d00000012000000160000001a000000
         actionHashCodes: d5799805b2cf10006d52840487aa970087aa970048c01101
         unityObjectParams: []
@@ -14237,7 +14243,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101
-        actionIsOpen: 010101
+        actionIsOpen: 000001
         actionStartIndex: 000000000500000009000000
         actionHashCodes: 876045025e69bb04230cc800
         unityObjectParams: []
@@ -14310,9 +14316,9 @@ MonoBehaviour:
         - useVariable: 1
           name: Bullet Damage
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
-          value: 0
+          value: 25
         - useVariable: 0
           name: 
           tooltip: 
